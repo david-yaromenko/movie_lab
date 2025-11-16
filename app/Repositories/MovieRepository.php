@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\DTO\Admin\MovieDTO;
+use App\Events\MovieCreated;
 use App\Interfaces\MovieInterface;
 use App\Models\Movie;
 use App\Models\MoviePersonRole;
@@ -36,6 +37,13 @@ class MovieRepository implements MovieInterface
                 ]);
             }
         }
+
+        $movieForTg = [
+            'title' => $movieDTO->title,
+            'poster' => $movieDTO->poster
+        ];
+
+        event(new MovieCreated($movieForTg));
 
         return $movie;
     }

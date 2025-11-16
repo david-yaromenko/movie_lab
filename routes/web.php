@@ -17,7 +17,7 @@ Route::group(
     function () {
 
         Route::get('/', [HomeController::class, 'index'])->name('home.index');
-        Route::get('/home/{movie}', [HomeController::class, 'show'])->name('home.show');
+        Route::get('/movie/{movie}', [HomeController::class, 'show'])->name('home.show');
     }
 );
 

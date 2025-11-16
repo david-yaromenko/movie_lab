@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Movie App</title>
     @vite('resources/css/app.css')
+
+    
 </head>
 <body class="bg-white text-gray-900">
     @yield('content')
