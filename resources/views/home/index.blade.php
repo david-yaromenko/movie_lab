@@ -9,9 +9,9 @@
                 <img src="{{ asset('storage/logo.png') }}" alt="Logo" class="w-8 h-8">
                 <h1 class="text-xl font-bold">MOVIE LAB</h1>
             </div>
-            
+
             <a href="https://t.me/movie_lab_news_bot" target="_blank" class="text-blue-600 hover:text-blue-700">
-                Підписатися на бота в Telegram для новин
+                {{ __('telegramBot.subscribe_to_news_bot') }}
             </a>
 
             <div class="text-right">
