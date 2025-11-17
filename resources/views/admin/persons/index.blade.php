@@ -53,7 +53,7 @@
 
         {{-- Фото --}}
         <div>
-            <label class="block text-gray-700 font-semibold mb-2">Фото</label>
+            <label class="block text-gray-700 font-semibold mb-2">Фото(не більше 2МБ)</label>
             <input type="file" name="photo" accept="image/*"
                 class="block w-full text-gray-700 file:mr-4 file:py-2 file:px-4
                        file:rounded-full file:border-0

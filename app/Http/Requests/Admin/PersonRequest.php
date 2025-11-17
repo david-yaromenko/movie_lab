@@ -33,6 +33,14 @@ class PersonRequest extends FormRequest
         ];
     }
 
+    public function messages()
+    {
+        return [
+            'poster.image'    => 'Photo must be image.',
+            'poster.max'      => 'The Photo is too large. Maximum size is 2 MB.',
+            'poster.uploaded' => 'Photo not download. Try again.',
+        ];
+    }
     public function toDto()
     {
 

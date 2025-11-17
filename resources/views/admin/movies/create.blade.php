@@ -177,7 +177,7 @@
 
         {{-- Постер --}}
         <div>
-            <label class="block text-gray-700 font-semibold mb-2">Постер</label>
+            <label class="block text-gray-700 font-semibold mb-2">Постер(не більше 2МБ)</label>
             <input type="file" name="poster" accept="image/*"
                    class="block w-full text-gray-700 file:mr-4 file:py-2 file:px-4
                           file:rounded-full file:border-0
@@ -188,7 +188,7 @@
 
         {{-- Скриншоты --}}
         <div>
-            <label class="block text-gray-700 font-semibold mb-2">Скріншоти</label>
+            <label class="block text-gray-700 font-semibold mb-2">Скріншоти(не більше 2МБ)</label>
             <input type="file" name="screenshots[]" multiple accept="image/*"
                    class="block w-full text-gray-700 file:mr-4 file:py-2 file:px-4
                           file:rounded-full file:border-0

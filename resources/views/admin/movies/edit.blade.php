@@ -146,7 +146,7 @@
 
             {{-- Постер --}}
             <div>
-                <label class="block text-gray-700 font-semibold mb-2">Постер</label>
+                <label class="block text-gray-700 font-semibold mb-2">Постер(не більше 2МБ)</label>
                 @if ($movie->poster)
                     <img src="{{ asset('storage/' . $movie->poster) }}" class="w-32 h-48 object-cover rounded mb-2">
                 @endif
@@ -160,7 +160,7 @@
 
             {{-- Скриншоти --}}
             <div>
-                <label class="block text-gray-700 font-semibold mb-2">Скріншоти</label>
+                <label class="block text-gray-700 font-semibold mb-2">Скріншоти(не більше 2МБ)</label>
                 <div class="flex gap-2 mb-2">
                     @if ($movie->screenshots)
                         @foreach ($movie->screenshots as $screenshot)
