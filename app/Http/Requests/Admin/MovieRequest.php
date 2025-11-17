@@ -30,9 +30,9 @@ class MovieRequest extends FormRequest
             'title.*' => 'string|max:255',
             'description' => 'nullable|array',
             'description.*' => 'string',
-            'poster' => 'nullable|image|max:2048',  
+            'poster' => 'nullable|image|max:2048',
             'screenshots' => 'nullable|array',
-            'screenshots.*' => 'nullable|image|max:2048', 
+            'screenshots.*' => 'nullable|image|max:2048',
             'trailer_id_youtube' => 'nullable|string|max:255',
             'year' => 'nullable|integer|min:1800|max:' . date('Y'),
             'watch_start_date' => 'nullable|date',
@@ -40,9 +40,17 @@ class MovieRequest extends FormRequest
         ];
     }
 
-    public function toDto(){
-        
-        return MovieDTOFactory::fromRequest($this);
+    public function messages()
+    {
+        return [
+            'poster.image'    => 'File must be image.',
+            'poster.max'      => 'The file is too large. Maximum size is 2 MB.',
+        ];
+    }
 
+    public function toDto()
+    {
+
+        return MovieDTOFactory::fromRequest($this);
     }
 }
