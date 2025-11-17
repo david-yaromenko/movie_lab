@@ -43,8 +43,12 @@ class MovieRequest extends FormRequest
     public function messages()
     {
         return [
-            'poster.image'    => 'File must be image.',
-            'poster.max'      => 'The file is too large. Maximum size is 2 MB.',
+            'poster.image'    => 'Poster must be image.',
+            'poster.max'      => 'The Poster is too large. Maximum size is 2 MB.',
+            'poster.uploaded' => 'Poster not download. Try again.',
+            'screenshots.*.image' => 'Screenshots must be image.',
+            'screenshots.*.max' => 'The screenshots is too large. Maximum size is 2 MB.',
+            'screenshots.*.uploaded' => 'Screenshots must be image.',
         ];
     }
 
